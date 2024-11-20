@@ -36,7 +36,7 @@ To get the **number of files in the zipped file**. Run the following code:
 
 The first part of the code is meant to list the contents of the zipped file including the sizes, date and time 
 
-The second part of the code is meant to search for patterns, here we are looking for lines that begin with a space and followed by integers and counting this lines 👍
+The second part of the code is meant to search for patterns, here we are looking for lines that begin with a space and followed by integers and counting this lines . Remember thi s is done on the output of the first part of the code👍
 
 Another code that can be used here is 
 
