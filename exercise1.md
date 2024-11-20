@@ -109,7 +109,14 @@ We replace the values in dengue_seq.txt with small letters using the following c
 
 Your dengue_seq.txt file should now have lowercase letters, you can confirm this using the `cat` command
 
+To count the number of bases and output the organisms with the highest and list number of bases a script file called **_counts.sh_** is in the files section which you can run using the command `bash counts.sh`
 
+The output for this command should look something like this :wink
+
+Organism with the highest number of base pairs: NC_001477.1 Dengue virus 1, complete genome with 10735 bases.
+Organism with the least number of base pairs: NC_001478.1 Digitaria streak virus, complete genome with 2701 bases.
+
+Thank you!!! 👋
 
 
 
