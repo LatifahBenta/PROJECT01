@@ -89,7 +89,13 @@ Extracting the headers of the merged fasta file and putting them in a different 
 
 `grep "^>" dengue_merged.fasta > dengue_headers.txt`
 
-This line of code looks for lines that begin with > and prints them into the redirected output. You can check your output using the `ls dengue_headers.txt` 
+This line of code looks for lines that begin with > and prints them into the redirected output. You can check your output using the 
+`ls dengue_headers.txt` 
+
+Extracting only the names of the virus and creating a new file called viruses.txt use
+`awk '{print $2 " " $3} dengue_headers.txt> viruses.txt`
+
+This will print the second and third field of the given file and instead of printing the output on the screen redirects it to a file called viruses.txt
 
 
 
