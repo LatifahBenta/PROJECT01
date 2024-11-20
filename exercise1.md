@@ -38,15 +38,32 @@ The first part of the code is meant to list the contents of the zipped file incl
 
 The second part of the code is meant to search for patterns, here we are looking for lines that begin with a space and followed by integers and counting this lines . Remember thi s is done on the output of the first part of the code👍
 
-Another code that can be used here is 
+Another code that can be used here is   **_5_**
 
-`unzip -Z1 yourfile.zip | wc -l`
+`unzip -Z1 dengue.zip | wc -l`
+
+The output for this is 
 
 Here we are listing the file names without details like size and date of the zipped file and counting each line of the output.
 
 To **get the number of lines in each file** do the following
 
+```
+cd dengue
 
+wc -l *.fasta | head -n -1
+
+```
+
+The output is 
+
+| File name | No. of lines|
+|------------|------------|
+|dengueseq1.fasta| 42|
+|dengueseq2.fasta| 115|
+|dengueseq3.fasta| 94|
+|dengueseq4.fasta|113|
+|dengueseq5.fasta|157|
 
 `
 
