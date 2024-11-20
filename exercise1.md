@@ -73,5 +73,28 @@ To merge all the files into one fasta file, you can run the code
 
 This code will append all the fasta files into one file. Your file should have 521 lines 😉
 
+To get the number of headers in the merged file. Run the code
+
+`grep ">" dengue_merged.fasta | wc -l`
+
+The output is **5**
+
+To get the number of sequences in your merged sequence file run the following command;
+
+`grep -c ">" dengue_merged.fasta`
+
+This counts the number of lines that begin with the special character ">". Remember the format of a fasta file 😉 The output is **5**
+
+Extracting the headers of the merged fasta file and putting them in a different file using the code
+
+`grep "^>" dengue_merged.fasta > dengue_headers.txt`
+
+This line of code looks for lines that begin with > and prints them into the redirected output. You can check your output using the `ls dengue_headers.txt` 
+
+
+
+
+
+
 
 
