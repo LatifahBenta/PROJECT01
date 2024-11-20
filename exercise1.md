@@ -95,7 +95,16 @@ This line of code looks for lines that begin with > and prints them into the red
 Extracting only the names of the virus and creating a new file called viruses.txt use
 `awk '{print $2 " " $3} dengue_headers.txt> viruses.txt`
 
-This will print the second and third field of the given file and instead of printing the output on the screen redirects it to a file called viruses.txt
+This will print the second and third field of the given file and instead of printing the output on the screen redirects it to a file called viruses.txt 👏
+
+To create a file dengue_seq.txt that only contains the sequences without headers, use the folloeing command
+
+`awk '!/^>/ {print}' dengue_merged.fasta > dengue_seq.txt`
+
+This command begins with a the character ! which tells awk to ignore lines beginning with >  and the output should be redirected to a file called dengue_seq.txt. Remember if you  already have a file dengue_seq.txt with content, it will be overwritten 😲 so be careful!! and if the file did not exist, it will be created and your output put there 😄
+
+
+
 
 
 
