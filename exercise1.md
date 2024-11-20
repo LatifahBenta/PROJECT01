@@ -65,6 +65,13 @@ The output is
 |dengueseq4.fasta|113|
 |dengueseq5.fasta|157|
 
-`
+The number of lines in all the files combined is **521**
+
+To merge all the files into one fasta file, you can run the code 
+
+`cat dengueseq*.fasta >> dengue_merged.fasta`
+
+This code will append all the fasta files into one file. Your file should have 521 lines 😉
+
 
 
