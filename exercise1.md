@@ -1,5 +1,7 @@
 ## PROJECT_DENGUE EXERCISE.
 
+Here are all the codes i used to complete this exercise
+
 The following code was used to **create the project directory**
 
 `mkdir -p project_dengue{Data/{Raw,processed},codes}`
