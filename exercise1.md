@@ -95,9 +95,16 @@ This line of code looks for lines that begin with > and prints them into the red
 `ls dengue_headers.txt` 
 
 Extracting only the names of the virus and creating a new file called viruses.txt use
+
 `awk '{print $2 " " $3} dengue_headers.txt> viruses.txt`
 
 This will print the second and third field of the given file and instead of printing the output on the screen redirects it to a file called viruses.txt 👏
+
+An alternative code for this would be:
+
+`awk 'gsub(/, complete/, " ") {print $2 " " $3}' dengue_headers.txt`
+
+This line of code looks for the pattern **,complete** in the file and substitues it with a **space** and prints fields 2 and 3.
 
 To create a file dengue_seq.txt that only contains the sequences without headers, use the following command
 
