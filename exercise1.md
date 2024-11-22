@@ -38,15 +38,15 @@ To get the **number of files in the zipped file**. Run the following code:
 
 The first part of the code is meant to list the contents of the zipped file including the sizes, date and time 
 
-The second part of the code is meant to search for patterns, here we are looking for lines that begin with a space and followed by integers and counting this lines . Remember thi s is done on the output of the first part of the code👍
+The second part of the code is meant to search for patterns, here we are looking for lines that begin with a space and followed by integers and count this lines . Remember this is done on the output of the first part of the code👍
 
-Another code that can be used here is   **_5_**
+Another code that can be used here is   
 
 `unzip -Z1 dengue.zip | wc -l`
 
-The output for this is 
-
 Here we are listing the file names without details like size and date of the zipped file and counting each line of the output.
+
+The output for this is **_5_**
 
 To **get the number of lines in each file** do the following
 
@@ -111,12 +111,12 @@ We replace the values in dengue_seq.txt with small letters using the following c
 
 Your dengue_seq.txt file should now have lowercase letters, you can confirm this using the `cat` command
 
-To count the number of bases and output the organisms with the highest and list number of bases a script file called **_counts.sh_** is in the files section which you can run using the command `bash counts.sh`
+To count the number of bases and output the organisms with the highest and least number of bases a script file called **_counts.sh_** is in the files section which you can run using the command `bash counts.sh`
 
-The output for this command should look something like this :wink
+The output for this command should look something like this:
 
-Organism with the highest number of base pairs: NC_001477.1 Dengue virus 1, complete genome with 10735 bases.
-Organism with the least number of base pairs: NC_001478.1 Digitaria streak virus, complete genome with 2701 bases.
+**Organism with the highest number of base pairs: NC_001477.1 Dengue virus 1, complete genome with 10735 bases.**
+**Organism with the least number of base pairs: NC_001478.1 Digitaria streak virus, complete genome with 2701 bases.**
 
 Thank you!!! 👋
 
